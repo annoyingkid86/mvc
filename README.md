@@ -7,7 +7,6 @@ Requirements
 - [php 8.3][php]
 - php-xml
 - [composer][composer]
-- [symfony][symfony]
 
 Please refer to your operating system for instructions in installing these components.
 
@@ -16,6 +15,7 @@ How to install
 
 ```
 git clone https://github.com/annoyingkid86/mvc
+cd mvc
 npm install
 composer install
 ```
@@ -43,4 +43,3 @@ To stop server, use ctrl+c
 [composer]: https://getcomposer.org/
 [npm]: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 [php]: https://www.php.net/
-[symfony]: https://symfony.com/

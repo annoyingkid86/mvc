@@ -25,3 +25,12 @@ main a:hover {
 	background-color: var(--footer-color);
 	color: var(--footer-text);
 }
+
+main h2 {
+	padding-bottom: 1rem;
+}
+
+main li {
+	padding-bottom: 2rem;
+	list-style: none;
+}
