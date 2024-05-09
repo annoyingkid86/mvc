@@ -1,0 +1,15 @@
+article {
+    border: 1px solid var(--font-color);
+    display: inline-block;
+}
+
+article h2 {
+    display: block;
+    width: auto;
+    padding: 1rem;
+    margin: 0;
+}
+
+article p {
+    padding: 1rem;
+}

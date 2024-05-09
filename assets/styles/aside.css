@@ -1,0 +1,24 @@
+aside {
+    border: 1px solid var(--font-color);
+    display: block;
+    padding: 1rem;
+    border-right: none;
+}
+
+aside a {
+    color: var(--font-color);
+}
+
+aside ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+aside li {
+    color: var(--font-color);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}

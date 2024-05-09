@@ -1,0 +1,22 @@
+
+.imageBorder {
+    display: block;
+    width: auto;
+    padding: 1rem;
+}
+
+.imageBorder img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageBorder p {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    padding: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}

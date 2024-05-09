@@ -1,0 +1,25 @@
+
+.borderBlock {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.borderBlock img {
+    max-width: 100%;
+}
+
+.presentationBlock {
+    width: 50%;
+}
+
+.textBlock {
+    display: block;
+    margin: 0;
+}
+
+.infoBlock {
+    display: inline-block;
+    padding-top: 0;
+}

@@ -1,0 +1,39 @@
+nav ul {
+  align-items: start;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+    text-decoration: none;
+    color: var(--footer-text);
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 1rem;
+    display: inline-block;
+}
+
+li:hover {
+    background-color: var(--footer-text);
+    color: var(--font-color);
+}
+
+nav li:visited {
+    text-decoration: none;
+}
+
+.active {
+    background-color: var(--accessed-color);
+}
+
+nav {
+    background-color: var(--header-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--footer-text);
+}

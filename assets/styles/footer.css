@@ -1,0 +1,34 @@
+footer {
+    border-top: 1px solid black;
+    background-color: var(--footer-color);
+    color: var(--footer-text);
+}
+
+.footerBlock {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.footerBlock li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerBlock ul {
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+
+.footerBlock a {
+    padding-bottom: 1rem;
+}
+
+/*
+.footerBlock {
+    display: inline-block;
+}
+*/

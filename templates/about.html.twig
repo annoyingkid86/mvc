@@ -1,0 +1,59 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Om kursen DV1608</h1>
+    
+    <div class="flex">
+        <div class="borderBlock">
+            <img src="{{ asset('img/border.png')}}" alt="Översikt">
+        </div>
+    </div>
+    
+    <p>Kursens inofficiella namn är Objektorienterade webbteknologier, mvc(Model-view-controller)!</p>
+    <p>Kursen demonstrerar bland annat hur man via objektorienterad php kan kommunicera för att koppla ett ramverk till en hemsida, exempelvis Symfony!</p>
+    <h2>Översikt på olika moment</h2>
+    
+    <div class="flex">
+        <div class="row">
+        <div class="block">
+            <h3>Ramverk</h3>
+            <p>Momentet fokuserar på att få igång ett ramverk, och koppla det via php! Här är det kontroller och vyer som är i fokus!</p>
+        </div>
+        <div class="block">
+            <h3>Objektorientering</h3>
+            <p>Fokus i den här uppgiften handlar om att implementera ett kortspel och öva mer på objektiorienterad programmering!</p>
+            <p>Dessutom skapar man egna klasser och applikationer i Symfony!</p>
+        </div>
+        <div class="block">
+            <h3>Applikation</h3>
+            <p>I den här uppgiften ska man främst implementera, problemlösa och designa en applikation i Symfony!</p>
+            <p>Detta ska utföras som objektorienterade konstruktioner enligt MVC-standarden!
+        </div>
+        </div>
+        <div class="row">
+        <div class="block">
+            <h3>Enhetstestning</h3>
+            <p>Här ska man främst utföra testdriven utveckling via PHPUnit!</p>
+        </div>
+        <div class="block">
+            <h3>ORM / Databas</h3>
+            <p>I det här momentet ska man koppla en databas till ramverket, man får välja mellan SQLite och MariaDB!</p>
+        </div>
+        <div class="block">
+            <h3>Automatiserad test</h3>
+            <p>Under samtliga moment laddar man upp sin kod till GitHub! Här ska Git-repon kopplas till en tjänst som testar applikationen!</p>
+        </div>
+        </div>
+    </div>
+    
+    <h2>Länkar</h2>
+    
+    <p>
+        <a href="https://github.com/dbwebb-se/mvc">Kursens github</a>
+    </p>
+    
+    <p>
+        <a href="https://github.com/annoyingkid86/mvc">Sidans github</a>
+    </p>
+    
+{% endblock %}

@@ -1,0 +1,68 @@
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+header p {
+    position: relative;
+}
+
+header .headerBlock {
+    height: 100%;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.headerBlock .headerData {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: start;
+}
+
+.headerData p {
+    margin: 0;
+    display:block;
+}
+
+.headerBlock p { 
+    display: inline-block;
+    font-size: 3vw;
+    padding: 1rem;
+    background-image:radial-gradient(ellipse closest-side, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.course {
+    font-size: 3vw;
+    position: absolute;
+    left: 10px;
+}
+
+.headerBlock img {
+    width: 100%;
+}
+
+.headerBlock .upperContent {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.headerBlock .lowerContent {
+    width: 100%;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}

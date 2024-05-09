@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(246 245 244);
+}
+
+main {
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid var(--font-color);
+    border-right: 1px solid var(--font-color);
+    width: 60%;
+    background-color: var(--main-color);
+}
+
+main a {
+	color: var(--font-color);
+	padding: 1rem;
+}
+
+main p a {
+	padding-bottom: 1rem;
+}
+
+main a:hover {
+	background-color: var(--footer-color);
+	color: var(--footer-text);
+}

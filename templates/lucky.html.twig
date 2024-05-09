@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Turnummer</h1>
+    
+    <p>Idag är ditt turnummer: {{ number }}</p>
+    
+    <div class="flex">
+        <div class="galleryBlock">
+            <img src='{{ asset("img/random_gallery/#{first_image}.jpg") }}' alt='{{ first_image }}'>
+        </div>
+        <div class="galleryBlock">
+            <img src='{{ asset("img/random_gallery/#{second_image}.jpg") }}' alt='{{ second_image }}'>
+        </div>
+    </div>
+    
+    {% if same_number %}
+        <p>{{ same_number }}</p>
+    {% endif %}
+{% endblock %}

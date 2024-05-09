@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{{ title }}{% endblock %}</title>
+        <link rel="icon" href="img/favicon.png">
+        
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <div class="headerBlock">
+                <img src="{{ asset('img/background.jpg') }}">
+                
+                <div class="headerData">
+                    <p>Kursen mvc</p>
+                    <div class="centerTitle">
+                        <p>{{ title }}</p>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+    
+        <nav>
+            <ul>
+                {% set route = app.request.attributes.get('_route') %}
+                
+                {% for i in range(0, pages|length-1, 2) %}
+                    
+                    {% if route is same as pages[i] %}
+                    <a href="{{ path(pages[i]) }}">
+                        <li class="active">
+                            {{ pages[i+1] }}
+                        </li>
+                    </a>
+                    {% else %}
+                    <a href="{{ path(pages[i]) }}">
+                        <li>
+                            {{ pages[i+1] }}
+                        </li>
+                    </a>
+                    {% endif %}
+                    
+                {% endfor %}
+            </ul>
+        </nav> 
+        
+        <main>
+        {% block body %}{% endblock %}
+        </main>
+        
+        <footer>
+            <div class= "flex">
+                <div class="footerBlock">
+                    <h2>Nyttiga länkar</h2>
+                    <ul>
+                        <a href="https://symfony.com/">
+                        <li>
+                            Symfony
+                        </li>
+                        </a>
+                        <a href="https://getcomposer.org/">
+                        <li>
+                            Composer
+                        </li>
+                        </a>
+                        <a href="https://www.php.net/">
+                            <li>
+                                PHP
+                            </li>
+                        </a>
+                        <a href="https://www.javascript.com/">
+                        <li>
+                            Javascript
+                        </li>
+                        </a>
+                        <a href="https://github.com/">
+                            <li>
+                                GitHub
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footerBlock">
+                    <h2>Dagens citat</h2>
+                    <p id="quote"></p>
+                </div>
+                <div class="footerBlock">
+                    <h2>Dagens datum</h2>
+                    <p id="date"></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

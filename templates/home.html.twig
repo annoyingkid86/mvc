@@ -1,0 +1,101 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Om mig</h1>
+    <h2>Introduktion</h2>
+        <div class="flex">
+            <div class="infoBlock">
+                <div class="textBlock">
+                    <p>Martin Jönsson heter jag, bosatt nere i Vellinge/Hököpinge, Skåne!</p>
+                    <p>Jag arbetar med tidningsutdelning på nätterna och webbprogrammeringsstudier dagtid! Hur är det med fritid?
+                    Hmm, begränsad!</p>
+                </div>
+            </div>
+            <div class="infoBlock">
+                <div class="imageBorder">
+                    <div class = "flex">
+                        <img src="{{ asset('img/me.png')}}" alt="Mygghatt">
+                    </div>
+                    <p>Mygghatten i högsta hugg! Det märks väldigt tydligt om man glömmer använda den i Norrland!</p>
+                </div>
+            </div>
+        </div>
+        <div class="presentationBlock">
+            <div class="imageBorder">
+                <div class="flexColumn">
+                    <img src="{{ asset('img/paxster.png')}}" alt="Paxster">
+                
+                    <p>En Paxster! Den här lilla rackaren kör jag runt med på natten! Den är eldriven och alltså emissionsfri!</p>
+                </div>
+            </div>
+        </div>
+        <p>Min introduktion till en dator var som 9-åring, den kändes definitivt som världens långsammaste!</p>
+        <p>Datorn i sig hade en hårddisk på 400MB, det visar på hur fort tekniken utvecklas om man jämför med dagens
+            storlekar!</p>
+        <p>Främst var man inne i DOS och experimenterade med olika QuickBasic-exempel, såvida man inte spelade en
+            session Colonization!</p>
+        <p>Det spelet har man spenderat alldeles för mycket tid på!</p>
+
+        <h2>Djurbilder</h2>
+
+        <p>Jag besöker mina föräldrar varannan vecka, de är bosatta i Blekinge utanför Karlshamn!</p>
+        <p>Jag har ett intresse utav att dokumentera djurlivet, och placerar ut åtelkameror på olika platser!</p>
+        <p>Stöter man på ormar är det bra om man har sin videokamera i högsta hugg!</p>
+        <p>Har man tur kan man få fatt i väldigt bra bilder/videor!</p>
+        <p>En utav dem skickar dessutom bilder till min telefon, så när det plingar till är det spännande att se vad som
+            har dykt upp!</p>
+
+        <h2>Några bilder</h2>
+            <div class="gallery">
+                <div class="flex">
+                    <div class="galleryBlock">
+                        <img src="{{ asset('img/lodjur_2023.jpg')}}" alt="Lodjur 2023">
+                        <p>Största överraskningen i slutet av 2023! Det plingade till i telefonen, och det var ett lodjur som sprang förbi!</p>
+                    </div>
+                    <div class="galleryBlock">
+                        <img src="{{ asset('img/huggorm_2024.jpg')}}" alt="Huggorm 2024">
+                        <p>Årets första huggorm! Nu har de vaknat!</p>
+                    </div>
+                    <div class="galleryBlock">
+                        <img src="{{ asset('img/alg_2022.jpg')}}" alt="Älg 2022">
+                        <p>Fortfarande min bästa bild hittills! Klar och tydlig bild på en älg!</p>
+                    </div>
+                    <div class="galleryBlock">
+                        <img src="{{ asset('img/rav_2022.jpg')}}" alt="Räv 2022">
+                        <p>En av de bästa rävbilderna! Det är inte ofta räven är aktiv när det är ljust ute!</p>
+                    </div>
+                    <div class="galleryBlock">
+                        <img src="{{ asset('img/vildsvin_2024.jpg')}}" alt="Vildsvin 2024">
+                        <p>Ett prickigt vildsvin! Relativt sällsynt, men ibland är det i krokarna!</p>
+                    </div>
+                </div>
+            </div>
+            
+        <h2>Spelutveckling</h2>
+        
+        <p>I grund och botten är jag skolad inom spelutveckling!</p>
+        <p>Oturligt nog går i princip hela spelbranschen i helt fel riktning, så det är indie-utveckling man får fokusera på i sådana fall!</p>
+        <p>Främst jobbar jag i Linux, med OpenGL som grafikbibliotek! Jag har använt Eclipse för min utveckling i flera år, och det gör jag fortfarande!</p>
+        <p>Men det är en god idé att designa sin 3D-motor så att det enkelt går att byta både bibliotek och operativsystem, exempelvis DirectX!</p>
+        <p>Det finns en hel del utmaningar kring att implementera en sådan design!</p>
+        
+        <div class="gallery">
+                <div class="flex">
+                    <div class="galleryBlock">
+                        <img src="{{ asset('img/eclipse.png')}}" alt="Eclipse">
+                        <p>Så här kan det se ut när man snickrar i Eclipse! Många olika klasser och mycket kod att hålla reda på!</p>
+                    </div>
+                    <div class="galleryBlock">
+                        <img src="{{ asset('img/level_editor.png')}}" alt="Level Editor">
+                        <p>3D-motorn in action! En level editor, bland annat med ett implementerat Oct Tree!</p>
+                    </div>
+                </div>
+                
+        <p>Dessvärre har utvecklingen av 3D-motorn legat på is ett tag!</p>
+        <p>Det kan bli så när man får annat att göra!</p>
+        <p>Men jag hoppas kunna återvända till den lite längre framåt, som ett rent hobbyprojekt!</p>
+        
+        <h2>Avslutande ord</h2>
+
+        <p>Det var lite kort om mig, roligare än så blir det inte!</p>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Redovisning</h1>
+    
+    <div class="twoColumns">
+        <aside>
+            <div class="row">
+                <ul>
+                    <li><a href="#kmom01">kmom01</a></li>
+                    <li><a href="#kmom02">kmom02</a></li>
+                    <li><a href="#kmom03">kmom03</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href="#kmom04">kmom04</a></li>
+                    <li><a href="#kmom05">kmom05</a></li>
+                    <li><a href="#kmom06">kmom06</a></li>
+                </ul>
+            </div>
+        </aside>
+        <article>
+            <h2 id="kmom01">kmom01</h2>
+                
+                <p>
+                    <b>Berätta kort om dina förkunskaper och tidigare erfarenheter kring objektorientering.</b>
+                </p>
+                <p><b>Svar: </b>Det finns många olika situationer där jag har stött på objektorienterad programmering!</p>
+                <p>De tidigaste tillfällena har varit inom Java och C++, det är ett bra sätt för att referera objekt! </p>
+                <p>Ett enkelt exempel kan vara att tilldela en walker-pekare för att traversera noder i en länkad lista!</p>
+
+                <p>
+                    <b>Berätta kort om PHPs modell för klasser och objekt. Vilka är de grunder man behöver veta/förstå för att kunna komma igång och skapa sina första klasser?</b>
+                </p>
+                
+                <p><b>Svar: </b>Man kan skapa ett class-block, i detta definierar man själva klassnamnet, inuti går det att skapa variabler och funktioner!</p>
+                <p>Praxis inom objektorientering är att klassvariablerna är privata, medan set och get-metoder är publika!</p>
+
+                <p>
+                    <b>Reflektera kort över den kodbas, koden, strukturen som användes till uppgiften me/report, hur uppfattar du den?</b>
+                </p>
+                
+                <p><b>Svar: </b>Det blev lite svårigheter att få igång ramverket! Allt ifrån ḿånga olika kataloger att navigera mellan till att sätta upp rutter! </p>
+                <p>En extra klurighet när det visade sig att textgenomgångens länkar var annorlunda jämfört med videogenomgångens, det orsakade lite frågetecken!</p>
+                <p>Det finns ju alltid begränsingar med att använda ett ramverk jämfört med att koda något ifrån grunden själv, men det kan man ju anta att plugins är till för!</p>
+                <p>Jag gillar själv annars att koda en egen inläsningsmetod jämfört med att använda json, då kan man verkligen kontrollera hur filen ska användas!</p>
+                <p>Kanske man ska läsa in sig på hur ramverk fungerar, att bygga ett eget skulle kunna vara ett projekt i sig!</p>
+
+                <p>
+                    <b>
+                        Med tanke på artikeln “PHP The Right Way”, vilka delar in den finner du extra intressanta och värdefulla?
+                        Är det några särskilda områden som du känner att du vill veta mer om? Lyft fram några delar av artikeln som du känner mer värdefulla.
+                    </b>
+                </p>
+                
+                <p><b>Svar: </b>Själva uppgraderingssteget i utav php i sig kan vara rätt intressant! Framför allt om det går fel! Hur gör man då? </p>
+                <p>Jag råkade själv ut för problem på en av mina datorer, och fick leta fram en lösning vilken innefattade att ändra vissa inställningar! </p>
+                <p>Problemlösningen i sig kan ju vara en tidskrävande process, så det kan ju vara rätt bra att ha någon sorts vägledning!</p>
+                <p>Virtuella servrar via nginx är något jag prövat på, men misslyckats med i nuläget! En guide vore inte fel!</p>
+
+                <p>
+                    <b>
+                        Vilken är din TIL för detta kmom?
+                    </b>
+                </p>
+                <p><b>Svar: </b>Oj, här var det en hel del som hände! Mest signifikant var att köra en server via ett php-kommando, samt skapa rutter i Symfony!</p>
+                <p>I uppgiften skulle man skapa lite rutter som genererade json-kod, jag experimenterade med att hämta datan via javascript och sedan skriva ut datum och citat i footern!</p>
+                <p>Själva uppgiften i sig kändes ändå ganska stor i förhållande till den beräknade tiden, det var väldigt mycket man skulle få igång och hålla reda på!</p>
+                <p>I övrigt fick jag jobba en del med att få ihop stylingen så att det såg ut som jag ville, stundtals blev det lite problematiskt!</p>
+                <p>Men det är sådant som kan ske, och då krävs det ibland att man får experimentera en del tills det blir rätt!</p>
+        </article>
+    </div>
+{% endblock %}
