@@ -11,6 +11,7 @@
 @import "nav.css";
 @import "responsive.css";
 
+/*
 .box {
     position: absolute;
     width: 100%;
@@ -22,6 +23,8 @@
     margin: 0;
     padding: 0;
 }
+
+*/
 
 .block {
     width: 100%;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}{{ title }}{% endblock %}</title>
@@ -17,7 +17,7 @@
     <body>
         <header>
             <div class="headerBlock">
-                <img src="{{ asset('img/background.jpg') }}">
+                <img src="{{ asset('img/background.jpg')}}" alt = "Bakgrund">
                 
                 <div class="headerData">
                     <p>Kursen mvc</p>
@@ -36,17 +36,17 @@
                 {% for i in range(0, pages|length-1, 2) %}
                     
                     {% if route is same as pages[i] %}
-                    <a href="{{ path(pages[i]) }}">
-                        <li class="active">
+                    <li class="active">
+                        <a href="{{ path(pages[i]) }}">
                             {{ pages[i+1] }}
-                        </li>
-                    </a>
+                        </a>
+                    </li>
                     {% else %}
-                    <a href="{{ path(pages[i]) }}">
-                        <li>
+                    <li>
+                        <a href="{{ path(pages[i]) }}">
                             {{ pages[i+1] }}
-                        </li>
-                    </a>
+                        </a>
+                    </li>
                     {% endif %}
                     
                 {% endfor %}
@@ -62,31 +62,21 @@
                 <div class="footerBlock">
                     <h2>Nyttiga länkar</h2>
                     <ul>
-                        <a href="https://symfony.com/">
                         <li>
-                            Symfony
+                            <a href="https://symfony.com/">Symfony</a>
                         </li>
-                        </a>
-                        <a href="https://getcomposer.org/">
                         <li>
-                            Composer
+                            <a href="https://getcomposer.org/">Composer</a>
                         </li>
-                        </a>
-                        <a href="https://www.php.net/">
-                            <li>
-                                PHP
-                            </li>
-                        </a>
-                        <a href="https://www.javascript.com/">
                         <li>
-                            Javascript
+                            <a href="https://www.php.net/">PHP</a>
                         </li>
-                        </a>
-                        <a href="https://github.com/">
-                            <li>
-                                GitHub
-                            </li>
-                        </a>
+                        <li>
+                            <a href="https://www.javascript.com/">Javascript</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/">GitHub</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footerBlock">

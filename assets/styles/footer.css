@@ -4,6 +4,18 @@ footer {
     color: var(--footer-text);
 }
 
+footer li:hover {
+    background-color: var(--footer-text);
+}
+
+footer li:hover a {
+    color: var(--footer-color);
+}
+
+footer li:visited {
+    text-decoration: none;
+}
+
 .footerBlock {
     display: block;
     width: 100%;
